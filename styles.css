@@ -23,9 +23,18 @@ Todos los elementos <span> contenidos en la clase "normal"
 font-weight: bold;
 */ 
 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 * {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: VT323;
 }
 
 p {

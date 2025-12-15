@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularioooo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex; gap: 15px; list-style: none; padding: 0; margin: 0;">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="aboutme.html">Acerca de mi</a></li>
+                <li><a href="selectores.html">Ejercicio de Selectores</a></li>
+                <li><a href="forms.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1> Si quieres mas info de KAngel llena el formulario!!</h1>
+            <form action="https://formsubmit.co/ebermansantos@gmail.com" method="post"><!-- El valor del atributo action es la url a donde mandaremos la info del formulario -->
+
+                <fieldset> <!-- Organizar en campos las cosas de un formulario -->
+                    <!-- Permite agrupar campos de informacion -->
+                    <legend>Basic Info</legend>
+                    
+                    <label for="nombre"> <!-- Atributo for conecta la etiqueta con el input, debe tener el mismo nombre --> 
+                        Nombre(s): <input 
+                                    id="nombre" 
+                                    type="text"  
+                                    placeholder="Blanca" 
+                                    name="nombre"
+                                    required> <!-- Input es elemento de autocierre -->
+                    </label>
+                    
+                    <br><br>
+
+                    <label for ="apellidos">
+                        Apellidos: <input 
+                                    id="apellidos" 
+                                    type="text" 
+                                    placeholder="Perez" 
+                                    name="apellidos"
+                                    required>
+                    </label>
+                    
+                    <br><br>
+                    
+                    <label for="correo">
+                        Email: <input 
+                                            id="correo" 
+                                            type="text" 
+                                            placeholder="blanca@gmail.com"
+                                            name="correo">
+                    </label>
+                    
+                    <br><br>
+
+                    <label for="telefono">
+                        Telefono: <input 
+                                  type="text" 
+                                  id="telefono" 
+                                  placeholder="+52 123 456 7890"
+                                  name="telefono">
+                    </label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend> Datos extra :p </legend>
+                    <span> Si quieres tener chances de ganar merch de NSO llena lo siguiente!!!</span>
+                    
+                    <br><br>
+                    
+                    <label for="finales">
+                        Final favorito: <input 
+                                                   id="nsoFin" 
+                                                   type="number" 
+                                                   min="1" 
+                                                   max="27"
+                                                   name="album"> 
+                    </label>
+                    
+                    <br><br>
+                    
+                    <label for="fecha">
+                        Fecha de colaboracion: <input 
+                                                type="date" 
+                                                id="fecha"
+                                                name="fecha"> <!-- El name no debe ser forzosamente igual al id y for, pero es recomendable y lo mas comun -->
+                    </label>
+                    
+                    <br><br>
+                    
+                    <span> Lugar de colaboracion: </span>
+                    
+                    <br>
+                    
+                    <label for="parque">
+                        <input 
+                        id="parque"
+                        type="radio"
+                        name="lugar-de-colaboracion"> Parque "Plaza de la musica" <!-- El atributo name nos liga a los 3 labels, haciendo que solo 1 sea seleccionable -->
+                    </label>
+                    
+                    <br>
+                    
+                    <label for="auditorio">
+                        <input 
+                        id="auditorio"
+                        type="radio"
+                        name="lugar-de-colaboracion"> Auditorio "Rockea sin parar"
+                    </label>
+                    
+                    <br>
+
+                     <label for="zocalo">
+                        <input 
+                        id="zocalo"
+                        type="radio"
+                        name="lugar-de-colaboracion"> Zocalo
+                    </label>
+                </fieldset>
+
+                <label for="verificacion">
+                    <input 
+                    id="verificacion"
+                    type="checkbox" 
+                    required> Acepto los terminos y condiciones <!-- El checkbox no necesita el atributo for porque no tiene id -->
+                </label>
+
+                <br><br>
+                <!-- Boton con input del tipo submit -->
+                <!-- <input type="submit"> --> <!-- Boton para enviar el formulario -->
+                
+                <!-- Etiqueta semantica para boton -->
+                <button> Enviar 🎸</button>
+
+
+            </form>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
