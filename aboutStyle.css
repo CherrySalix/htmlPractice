@@ -63,3 +63,15 @@ figure img {
   border: 2px solid #9ffcff;
   box-shadow: 0 0 10px rgba(159, 252, 255, 0.6);
 }
+
+.ascii-art {
+  font-size: 10px;
+  color: #cfaaff;
+  overflow-x: auto;
+}
+
+footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+}
