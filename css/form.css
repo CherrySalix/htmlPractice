@@ -1,0 +1,67 @@
+*{
+    margin: 2%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root{
+    --color-de-acento: #988f1c;
+    --color-de-fondo: #212d11;
+    --color-de-texto: #ffffff;
+    --color-de-titulos: #988f1c;
+    --borde-redondeado: 5%;
+    /* darkred */
+}
+
+body{
+    background-color: var(--color-de-fondo);
+    font-family: 'Pirata One',system-ui;
+    color: var(--color-de-texto);
+    font-size: 1.4rem;
+}
+
+main{
+    background-color: #988f1c;
+    width: 70%;
+    max-width: 800px; /* Maximo de ancho posible */
+    margin: 2rem auto; /* Auto centra el bloque a los lados */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Selector de descendencia */
+nav ul{ 
+    list-style: none; /* Quitar el estilo de lista, por ejemplo, bullet points */
+    padding: 1rem;
+    display: flex;
+    flex-direction: row-reverse; /* Cambiar la direccion de derecha a izquierda */
+    justify-content:space-around; /* Distribuir equitativamente */
+}    
+
+
+nav ul li{
+    color: var(--color-de-titulos);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul li:hover{ /* Pseudo-clase hover al pasar el mouse */
+    color: darkred;
+}
+
+h1::first-letter{ /* Pseudo-elemento para la primera letra */
+    font-size: 150%;
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    display: block; /* (salto de linea) Hace que el label ocupe todo el ancho disponible/renglon */
+    margin-top: 15px; /* Separacion entre labels */
+}
+
+input{
+    border: 1px solid darkred ; 
+}
